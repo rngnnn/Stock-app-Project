@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Register from "../pages/Register";
 
 const authSlice = createSlice({
   name: "auth",
@@ -13,6 +14,10 @@ const authSlice = createSlice({
     fetchStart: state => {
       state.loading = true;
       state.error = false;
+    },
+    RegisterSucess:(state,action)=>{
+
+
     },
     fetchFail: state => {
       state.loading = false;
